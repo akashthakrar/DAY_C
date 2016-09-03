@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.project.dayc_app.MainActivity"
+    android:background="#eceff1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DAY_C"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f44336"
+        android:textSize="24dp"
+        android:autoText="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="about US"
+        android:id="@+id/button_aboutus"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:background="#fff176"
+        android:onClick="aboutUs" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contact us"
+        android:id="@+id/button_contactus"
+        android:layout_alignTop="@+id/button_aboutus"
+        android:layout_toEndOf="@+id/textView"
+        android:background="#fff176"
+        android:nestedScrollingEnabled="false"
+        android:onClick="contactUs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CATEGORIES"
+        android:id="@+id/textView2"
+        android:layout_marginTop="35dp"
+        android:textColor="#f44336"
+        android:textSize="20dp"
+        android:layout_below="@+id/button_aboutus"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="premium"
+        android:id="@+id/button_premium"
+        android:background="#fff176"
+        android:height="80dp"
+        android:width="80dp"
+        android:onClick="mapsPremium"
+        android:layout_alignTop="@+id/button_lunchdinner"
+        android:layout_alignStart="@+id/button_streetfood" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="street food"
+        android:id="@+id/button_streetfood"
+        android:background="#fff176"
+        android:height="80dp"
+        android:width="80dp"
+        android:onClick="mapsStreetFood"
+        android:layout_alignTop="@+id/button_nonveg"
+        android:layout_alignStart="@+id/button_aboutus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non-veg"
+        android:id="@+id/button_nonveg"
+        android:background="#fff176"
+        android:height="80dp"
+        android:width="80dp"
+        android:onClick="mapsNonVeg"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/button_lunchdinner"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lunch &amp; dinner"
+        android:id="@+id/button_lunchdinner"
+        android:background="#fff176"
+        android:height="80dp"
+        android:width="80dp"
+        android:onClick="mapsLunchDinner"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:height="40dp"
+        android:width="40dp"
+        android:src="@drawable/action_search"
+        android:background="#f44336"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:onClick="goToSearchActivity"
+        android:layout_below="@+id/button_nonveg"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

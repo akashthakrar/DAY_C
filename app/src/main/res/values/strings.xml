@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DAYC_APP</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_maps_premium">Map</string>
+    <string name="title_activity_maps_street_food">Map</string>
+    <string name="title_activity_maps_non_veg">Map</string>
+    <string name="title_activity_maps_lunch_dinner">Map</string>
+    <string name="title_activity_maps_street_food2">Map</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_maps_search">Map</string>
+</resources>
